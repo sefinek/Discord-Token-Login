@@ -15,7 +15,7 @@ jobs:
 
       - name: Create ZIP Archive
         run: |
-          zip -r release-${{ github.ref_name }}.zip README.md manifest.json LICENSE content.js popup icons
+          zip -r release-${{ github.ref_name }}.zip icons popup content.js LICENSE manifest.json README.md
 
       - name: Upload ZIP to Existing Release
         uses: softprops/action-gh-release@v2

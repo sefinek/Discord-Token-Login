@@ -4,7 +4,7 @@
   "version": "1.0.2",
   "description": "Log in to Discord using a token. Fully open-source on GitHub.",
   "author": "Sefinek",
-  "homepage_url": "https://github.com/sefinek/discord-token-login",
+  "homepage_url": "https://github.com/sefinek/Discord-Token-Login",
   "content_scripts": [
     {
       "js": [ "content.js" ],

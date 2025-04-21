@@ -5,13 +5,11 @@
   "description": "Log in to Discord using a token. Fully open-source on GitHub.",
   "author": "Sefinek",
   "homepage_url": "https://github.com/sefinek/Discord-Token-Login",
-  "content_scripts": [
-    {
-      "js": [ "content.js" ],
-      "matches": [ "http://*.discord.com/*", "https://*.discord.com/*" ],
-      "run_at": "document_start"
-    }
-  ],
+  "content_scripts": [{
+    "js": ["content.js"],
+    "matches": ["http://*.discord.com/*", "https://*.discord.com/*"],
+    "run_at": "document_start"
+  }],
   "permissions": ["tabs"],
   "action": {
     "default_popup": "popup/index.html",

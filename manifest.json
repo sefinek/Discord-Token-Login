@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Discord Token Login",
+  "version": "1.0.2",
+  "description": "Log in to Discord using a token. Fully open-source on GitHub.",
+  "author": "Sefinek",
+  "homepage_url": "https://github.com/sefinek/discord-token-login",
+  "content_scripts": [
+    {
+      "js": [ "content.js" ],
+      "matches": [ "http://*.discord.com/*", "https://*.discord.com/*" ],
+      "run_at": "document_start"
+    }
+  ],
+  "permissions": ["tabs"],
+  "action": {
+    "default_popup": "popup/index.html",
+    "default_icon": {
+      "128": "icons/2/128.png",
+      "64": "icons/2/64.png",
+      "32": "icons/2/32.png"
+    }
+  },
+  "icons": {
+    "128": "icons/1/128.png",
+    "64": "icons/1/64.png",
+    "32": "icons/1/32.png"
+  }
+}
